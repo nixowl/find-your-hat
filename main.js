@@ -22,9 +22,8 @@ class Field {
     do {
       // This outer loop will push each row into the "field" array
       for (let y = 0; y < height + 1; y++) {
-        // Initialize fieldRow here so that it creates a new row for each loop
+        // Inner loop creates rows, ensuring every row is different
           let fieldRow = [];
-          // Inner loop for each row 
         for (let x = 0; x < width + 1; x++) {
           const randomizer = Math.random(); // This generates a random number between 0 and 1
           fieldRow.push(randomizer <= percentDecimal ? hole : fieldCharacter); // If the random number is less than or equal to the percentage given, add a hole. Otherwise, add a fieldCharacter.
