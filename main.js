@@ -108,7 +108,7 @@ class Field {
         currentTile < 0 ||
         currentTile >= this.array[0].length
       ) {
-        console.log("Out of bounds! Game over.");
+        console.log("You went out of bounds!");
         lose = true;
       }
 
