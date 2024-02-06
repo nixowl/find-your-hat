@@ -10,7 +10,7 @@ class Field {
     this.array = array;
   }
 
-  // Static method so it can be called directly on the class Field instead of an instance of it, eg. Field.generateField() instead of const myField = new Field -> myField.generateField() this can be seen in action at the bottom of the file
+  // Static method so it can be called directly on the class Field instead of an instance of it, i.e. Field.generateField() instead of const myField = new Field -> myField.generateField() this can be seen in action at the bottom of the file
 
   static generateField(height, width, percent) {
     let field = [];
